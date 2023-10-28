@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Roboto, sans-serif;
+        }
+
+        /*================== section no 1 ====================*/
+        .hero-section {
+            /* border: 2px solid;   */
+            height: 40.9rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .hero-section::before {
+            content: "";
+            background: url("images/man\ back.png") no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 40.9rem;
+            z-index: -1;
+            opacity: .98;
+        }
+
+        .hero1 {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 0 13rem 0 0;
+        }
+
+        .btn {
+            padding: .75rem;
+            border-radius: .3rem;
+            width: 12rem;
+        }
+
+
+        .btn2 {
+            color: white;
+            background-color: transparent;
+            border: 2px solid white;
+            font-weight: bold;
+        }
+
+        .btn2:hover {
+            color: #080000;
+            background-color: white;
+
+        }
+
+        .hero-img {
+            align-self: flex-end;
+
+        }
+
+        .hero-img img {
+
+            height: 34rem;
+        }
+
+        /*================== section no 2 ====================*/
+        .section-2 {
+            /* border: 2px solid rebeccapurple; */
+            /* height: 31rem; */
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 5rem;
+        }
+
+        .sec-2-1 {
+            height: 16rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+        }
+
+        .sec-2-2 {
+            width: 50%;
+        }
+
+        /* .for-m {
+            padding: 5rem;
+        } */
+
+        .sec-2-2 button {
+            margin-top: 1rem;
+        }
+
+        /*==================== img-section ====================*/
+        .img-section {
+            display: flex;
+        }
+
+        .our-work {
+            /* border: 2px solid red; */
+            height: 15rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding: 2rem;
+            opacity: .9;
+        }
+
+        .w1 {
+            background-image: url("images/best_ser.png");
+        }
+
+        .w2 {
+            background-image: url("images/best_ser2.png");
+        }
+
+        .w3 {
+            background-image: url("images/best_ser3.png");
+        }
+
+        /*===================== services-section ===============*/
+        .services-section {
+            /* border: 2px solid green; */
+            height: 40rem;
+        }
+
+        .ss-head {
+
+            height: 10rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .ser-no {
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-around;
+            width: 20rem;
+            height: 7rem;
+            margin: 0 1rem;
+
+        }
+
+        .ser-img {
+            border: 2px solid #f4cb08;
+            width: 2.5rem;
+            height: 2rem;
+            border-radius: .8rem;
+            padding: .5rem;
+            text-align: center;
+        }
+
+        .ser-img img {
+            width: 2.5rem;
+
+        }
+
+        .txt {
+            /* border: 2px solid; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0 1rem 1rem 1rem;
+
+        }
+
+        .services {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            /* padding: 0 11rem; */
+            align-content: space-between;
+            height: 20rem;
+            /* border: 2px solid rebeccapurple ; */
+        }
+
+        /*=============== section-portfolio ==============*/
+
+        .section-portfolio {
+            background-color: #2c2c2c;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .section-portfolio h3 {
+            margin: 2rem 0;
+        }
+
+        /*=========== project-section =============*/
+
+        /* .project-section {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+             border: 2px solid red;
+            } */
+
+
+
+        .pi1 {
+            display: flex;
+            /* margin-bottom: 0; */
+        }
+
+        .pi2 {
+            display: flex;
+            /* margin: 0; */
+        }
+
+        .pro-img {
+            width: 25%;
+            /* border: 2px solid; */
+        }
+
+        .pro-img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /*================ team-section ==================*/
+        .team-section {
+            display: flex;
+            /* border: 2px solid rebeccapurple; */
+            padding: 2rem;
+        }
+
+        .map {
+            text-align: end;
+        }
+
+        .map img {
+            width: 31rem;
+            height: 20rem;
+        }
+
+        .team,
+        .map {
+            /* border: 2px solid red; */
+            width: 50%;
+        }
+
+        .t-margin {
+            margin: 1.5rem 5rem 0rem 1rem;
+
+        }
+
+
+        /*======================= rating-section ====================*/
+        .rating-section {
+            height: 20rem;
+            /* border:  2px solid red; */
+            background: url("images/rate-back_img.jpeg") no-repeat center center/cover;
+        }
+
+        .rating {
+            height: 19rem;
+            /* border: 2px solid green; */
+            display: flex;
+        }
+
+
+        .rate-item {
+            /* border: 2px solid greenyellow; */
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+        }
+
+        .rate-item,
+        h1,
+        span {
+            margin: 1rem 0rem;
+        }
+/*============ work-section ============*/
+.work-section{
+    height: 37rem;
+    /* border:5px solid #ec5904cc; */
+}
+.work-heading{
+    height: 13rem;
+    text-align: center;
+    /* border:5px solid #19520dcc; */
+    padding: 2rem 2rem 0rem 2rem;
+}
+.mrg-w{
+    margin:2rem 0rem ;
+}
+.working{
+    display: flex;
+    justify-content: center;
+}
+       .work{
+        width: 15rem;
+        height: 16rem   ;
+        /* border: 3px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
+        padding: 2rem;
+       }
+        
+        .work-logo{
+            height: 4rem;
+            width: 4rem;
+            background-color: #f4cb08;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .work-logo img{
+            height: 3rem;
+        }
+ /*========== testimobial-section =================*/
+ .testimobial-section{
+    height: 46rem;
+    padding-top: 1rem;
+    /* width: 100%; */
+    background-color: #2c2c2c;
+    /* border: 5px solid rgb(197, 194, 4); */
+
+ }
+ .testi-h{
+    margin: 3rem;
+    /* border: 2px solid red; */
+ }
+ .t-coments{
+    height: 30rem;
+    /* border: 2px solid rgb(17, 154, 172); */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+ }
+ .coment{
+    /* border: 2px solid rgb(2, 224, 13); */
+    width: 25%;
+    height: 22rem;
+ }
+ .c-border{
+    border: 2px solid white;
+    height: 9rem;
+    padding: 2rem;
+ }
+ .test-man{
+    margin-top: -3rem;
+ }
+
+ /*========= comp-logos-section ========*/
+ .comp-logos-section{
+    height: 18rem;
+    background-color: #171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .c-logos{
+    margin: 1.5rem;
+ }
+
+ /*============= blog-section ===========*/
+ .blog-section{
+    height: 45rem;
+    /* border: 2px solid red; */
+    padding-top: 2rem;
+ }
+ .blog-head{
+    height: 10rem;
+    /* border: 2px solid rgb(8, 8, 9); */
+ }
+ .blogs{
+    height: 33rem;
+    width: 28%;
+    /* border: 2px solid saddlebrown; */
+    margin: 0rem 1rem;
+ }
+ .blogs a{
+    text-decoration: none;
+    color: #171717;
+    border-bottom: 2px solid ;
+ }
+ .blog-tn img{
+    width: 100%;
+
+ }
+ .blog-txt {
+    margin: 2rem;
+    padding: 0;
+ }
+ .blog-mr{
+    margin: 1rem 0rem;
+ }
+ .blog-container{
+    display: flex;
+    justify-content: center;
+ }
+ /*============= footer ================*/
+.purchase{
+    background-color: #f4cb08;
+    height: 15rem;
+    display: flex;
+}
+.pur-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* border: 2px solid red; */
+    height: 14rem;
+}
+.purchase-btn {
+display: flex;
+width: 50%;
+height: 14rem;
+/* border: 2px solid rgb(22, 22, 22); */
+align-items: center;
+justify-content: center;
+}
+.f-end{
+    height: 7rem;
+    background-color: #2c2c2c;
+}
+.f-end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="hero-section">
+        <div class="hero1 w-col">
+            <h2 class="color-y">WE ARE BUILDERS</h2>
+            <h1>WE WILL BUILD YOUR DREAM</h1>
+            <p> Sample text. Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit nullam nunc justo sagittis
+                suscipit
+                ultrices. </p>
+            <div class="hero-btn">
+                <button class="btn1 y-btn btn">OUR PORTFOLIO</button>
+                <button class="btn2 btn bold-f">ABOUT US</button>
+            </div>
+
+        </div>
+        <div class="hero-img">
+            <img src="../Project 6/images/man.png" alt="">
+        </div>
+    </div>
+    <div class="section-2 for-m">
+        <div class="sec-2-1">
+            <h2 class="color-y">WELCOME TO</h2>
+            <h1>ELVO CONSTRUCTION</h1>
+            <i>
+                <p class="l-font g-col">We are the leader with 25 years of experience
+                    <br> in the construction market!
+                </p>
+            </i>
+        </div>
+        <div class="sec-2-2 f-size for-m l-height">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sed, nostrum, voluptatem accusantium
+                sapiente assumenda distinctio nulla aliquid, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem velit blanditiis recusandae, consectetur libero tenetur non rerum incidunt voluptates
+                labore, eligendi adipisci! Soluta possimus enim omnis numquam, expedita voluptatem repellendus? dolorem
+                error tempora libero quisquam! Magni dolore suscipit dolorem consequatur veniam, esse incidunt molestias
+                provident aperiam quo! Perferendis facere animi consectetur sed!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur adipisci, Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Asperiores libero natus ducimus, rem distinctio tenetur iste
+                necessitatibus eius quis hic accusantium atque, adipisci aliquid dignissimos at, excepturi ut dicta
+                fugiat. nulla, doloribus quia error quo ea dolor nostrum laborum possimus iste nisi veritatis sint
+                ducimus! Provident, autem.</p>
+            <div class="sec2-btn">
+                <button class="y-btn btn">READ MORE</button>
+            </div>
+        </div>
+    </div>
+    <div class="img-section w-col">
+        <div class="our-work w1">
+            <h2>DESIGN & BUILDING</h2>
+            <p class="f-size">Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc</p>
+        </div>
+        <div class="our-work w2">
+            <h2>CONSTRUCTION RENOVATION</h2>
+            <p class="f-size">Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc</p>
+            <p></p>
+        </div>
+        <div class="our-work w3">
+
+            <h2>CONSTRUCTION RENOVATION</h2>
+            <p class="f-size">Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc</p>
+        </div>
+    </div>
+    <div class="services-section">
+        <div class="ss-head f-w">
+            <h2 class="color-y">SPECIAL OFFER</h2>
+            <h1>OUR BEST SERVICES</h1>
+        </div>
+        <div class="services">
+            <div class="ser-no">
+                <div class="ser-img">
+                    <img src="images/design.png" alt="">
+                </div>
+                <div class="txt">
+                    <h3>DESIGN & PLANNING</h3>
+                    <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="ser-no">
+                <div class="ser-img">
+                    <img src="images/building2.png" alt="">
+                </div>
+                <div class="txt">
+                    <h3>BUILDING RENOVATION</h3>
+                    <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="ser-no">
+                <div class="ser-img">
+                    <img src="images/interior.png" alt="">
+                </div>
+                <div class="txt">
+                    <h3>INTERIOR DESIGN</h3>
+                    <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="ser-no">
+                <div class="ser-img">
+                    <img src="images/planing.png" alt="">
+                </div>
+                <div class="txt">
+                    <h3>CONSTRUCTION SERVICES</h3>
+                    <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="ser-no">
+                <div class="ser-img">
+                    <img src="images/documentation.png" alt="">
+                </div>
+                <div class="txt">
+                    <h3>DOCUMENTATION</h3>
+                    <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="ser-no">
+                <div class="ser-img">
+                    <img src="images/suport.png" alt="">
+                </div>
+                <div class="txt">
+                    <h3>PROFESSIONAL SUPPORT</h3>
+                    <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="section-portfolio">
+        <h3 class="color-y">PORTFOLIO</h3>
+        <h1 class="w-col">RECENT PROJECTS</h1>
+    </div>
+    <div class="project-section">
+        <div class="pi1">
+            <div class="pro-img"><img src="images/proj-img1.png" alt=""></div>
+            <div class="pro-img"><img src="images/proj-img2.png" alt=""></div>
+            <div class="pro-img"><img src="images/proj-img3.png" alt=""></div>
+            <div class="pro-img"><img src="images/proj-img4.png" alt=""></div>
+        </div>
+        <div class="pi2">
+            <div class="pro-img"><img src="images/proj-img5.png" alt=""></div>
+            <div class="pro-img"><img src="images/proj-img6.png" alt=""></div>
+            <div class="pro-img"><img src="images/proj-img7.png" alt=""></div>
+            <div class="pro-img"><img src="images/proj-img8.png" alt=""></div>
+        </div>
+    </div>
+    <div class="team-section">
+        <div class="map txt-cntr">
+            <img src="images/map.png" alt="">
+        </div>
+        <div class="team t-margin">
+            <h2 class="color-y t-margin">ELVO CONSTRUCTION</h2>
+            <h1 class="t-margin">THE BEST WORLD TEAM</h1>
+            <p class="t-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus eleifend. Nullam ornare
+                sapien quis vulputate cursus. Vivamus vel pellentesque purus, sed dignissim elit. Maecenas ac augue
+                metus. Suspendisse in elit nibh. Vestibulum in nibh risus. Phasellus ut cursus sem.</p>
+            <button class="y-btn btn t-margin">READ MORE</button>
+        </div>
+    </div>
+
+    <div class="rating-section">
+        <div class="rating">
+            <div class="rate-item ">
+                <h3 class="color-y l-font">8656</h3>
+                <span>Satisfied Customers</span>
+            </div>
+            <div class="rate-item ">
+                <h3 class="color-y l-font">8656</h3>
+                <span>Satisfied Customers</span>
+            </div>
+            <div class="rate-item ">
+                <h3 class="color-y l-font">8656</h3>
+                <span>Satisfied Customers</span>
+            </div>
+            <div class="rate-item">
+                <h3 class="color-y l-font">8656</h3>
+                <span>Satisfied Customers</span>
+            </div>
+        </div>
+    </div>
+<div class="work-section">
+    <div class="work-heading">
+        <div class="f-size color-y light-f mrg-w">STEP BY STEP</div>
+        <div class="l-font bold-f">HOW IT'S WORKING</div>
+    </div>
+    <div class="working">
+        <div class="work">
+            <div class="work-logo"><img src="images/design2.png" alt=""></div>
+            <div class="work-1 f bold-f">PLANNING</div>
+            <div class="work-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus.</div>
+        </div>
+        <div class="work">
+            <div class="work-logo"><img src="images/documentation.png" alt=""></div>
+            <div class="work-1 f bold-f">DESIGN</div>
+            <div class="work-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus.</div>
+        </div>
+        <div class="work">
+            <div class="work-logo"><img src="images/building2.png" alt=""></div>
+            <div class="work-1 f bold-f">BUILDING</div>
+            <div class="work-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus.</div>
+        </div>
+        <div class="work">
+            <div class="work-logo"><img src="images/finish2 - Copy.png" alt=""></div>
+            <div class="work-1 f bold-f">FINISH</div>
+            <div class="work-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus.</div>
+        </div>
+    </div>
+</div>
+<div class="testimobial-section">
+    <div class="testi-h center-txt">
+        <h1 class="color-y f-size">TESTIMONIALS</h1>
+
+        <h1 class="w-col l-font">WHAT THEY SAY ABOUT US</h1>
+    </div>
+    <div class="t-coments">
+        <div class="coment center-txt w-col">
+            <div class="c-border l-height">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus eleifend. Nullam ornare sapien.
+            </div>
+            <div class="test-man center-txt l-height">
+                <div class="t-man"><img src="images/person1.png" alt=""></div>
+                <div class="w-col m-font ">MIKE ANGELS</div>
+                <div class="color-y f-size">Architect</div>
+            </div>
+        </div>
+        <div class="coment center-txt w-col">
+            <div class="c-border l-height">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus eleifend. Nullam ornare sapien.
+            </div>
+            <div class="test-man center-txt l-height">
+                <div class="t-man"><img src="images/person2.png" alt=""></div>
+                <div class="w-col m-font ">CARL OSWAL</div>
+                <div class="color-y f-size">Builder</div>
+            </div>
+        </div>
+        <div class="coment center-txt w-col">
+            <div class="c-border l-height">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida cursus eleifend. Nullam ornare sapien.
+            </div>
+            <div class="test-man center-txt l-height">
+                <div class="t-man"><img src="images/person.png" alt=""></div>
+                <div class="w-col m-font ">MARK SMITH</div>
+                <div class="color-y f-size">Constructor</div>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+<div class="comp-logos-section">
+    <div class="c-logos">
+        <img src="images/logo1.png" alt="">
+    </div>
+    <div class="c-logos">
+        <img src="images/logo2.png" alt="">
+    </div>
+    <div class="c-logos">
+        <img src="images/logo3.png" alt="">
+    </div>
+    <div class="c-logos">
+        <img src="images/logo4.png" alt="">
+    </div>
+    <div class="c-logos">
+        <img src="images/logo5.png" alt="">
+    </div>
+    <div class="c-logos">
+        <img src="images/logo6.png" alt="">
+    </div>
+</div>
+
+<div class="blog-section">
+    <div class="blog-head center-txt ">
+        <div class="color-y m-font">THE BLOG</div>
+        <div class=" l-font f-w">LATEST NEWS</div>
+    </div>
+    <div class="blog-container">
+        <div class="blogs">
+            <div class="blog-tn"><img src="images/proj-img1.png" alt=""></div>
+            <div class="blog-txt">
+                <h3 class="m-font">GREAT PROJECTS</h3>
+                <span class="g-col ">19 March 2018 / Super User</span>
+                <p h3 class="blog-mr">Sample text. Lorem ipsum dolor sit amet, consectetur            adipiscing  elit nullam nunc justo sagittis suscipit ultrices.</p>
+                <a class="f-w blog-mr" href="#">READ MORE</a>
+            </div>
+        </div>
+        <div class="blogs">
+            <div class="blog-tn"><img src="images/proj-img2.png" alt=""></div>
+            <div class="blog-txt">
+                <h3 class="m-font">GREAT PROJECTS</h3>
+                <span class="g-col ">19 March 2018 / Super User</span>
+                <p h3 class="blog-mr">Sample text. Lorem ipsum dolor sit amet, consectetur            adipiscing  elit nullam nunc justo sagittis suscipit ultrices.</p>
+                <a class="f-w blog-mr" href="#">READ MORE</a>
+            </div>
+        </div>
+        <div class="blogs">
+            <div class="blog-tn"><img src="images/proj-img3.png" alt=""></div>
+            <div class="blog-txt">
+                <h3 class="m-font">GREAT PROJECTS</h3>
+                <span class="g-col ">19 March 2018 / Super User</span>
+                <p h3 class="blog-mr">Sample text. Lorem ipsum dolor sit amet, consectetur            adipiscing  elit nullam nunc justo sagittis suscipit ultrices.</p>
+                <a class="f-w blog-mr" href="#">READ MORE</a>
+            </div>
+        </div>
+    </div>
+   
+</div>
+<div class="footer">
+    <div class="purchase">
+        <div class="pur-txt">
+            <h3 class="l-font w-col light-f ">ELVO CONSTRUCTION</h3>
+            <p class="w-col l-height">This is an amazing template for many uses! Check it now!</p>
+        </div>
+
+        <div class="purchase-btn" > 
+            <button class="btn btn2">PURCHASE NOW</button>
+        </div>
+    </div>
+    <div class="f-end ">
+        <a href="#" class="color-y">Template</a>
+        <span class="w-col">by</span>
+        <a href="#" class="color-y">Hussam</a>
+    </div>
+</div>
+
+
+</body>
+
+</html>
