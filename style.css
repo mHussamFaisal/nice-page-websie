@@ -1,0 +1,58 @@
+/* utility classes */
+body{
+    color: #171717;
+}
+.color-w{
+    color: white;
+}
+.color-y{
+    color: #f4cb08;
+}
+.y-btn{
+    color: white;
+    font-weight: bolder;
+    background-color: #f4cb08;
+    border: none;
+}
+.y-btn:hover {
+    background-color: #d4b61f; 
+}
+.f-size{
+    font-size: 1.4rem;
+    /* line-height: 1.7rem; */
+}
+.l-height{
+    line-height: 1.7rem;
+}
+.l-font{
+    font-size: 2.3rem;
+    /* line-height: 2rem; */
+    
+}
+.m-font{
+    font-size: 1.8rem;
+}
+.g-col{
+    color: #ccc;
+}
+.w-col{
+    color: white;
+}
+.f-w{
+    font-weight: 1000;
+
+}
+.txt-cntr{
+    text-align: center;
+}
+
+.light-f{
+    font-weight: lighter;
+}
+.bold-f{
+    font-weight: bolder;
+}
+.center-txt{
+    text-align: center;
+}
+    
